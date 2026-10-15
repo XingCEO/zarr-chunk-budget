@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zarr-chunk-budget"
+version = "0.1.0"
+description = "Estimate chunk read amplification against your actual slice workload."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "XingCEO"}]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.scripts]
+zarr-chunk-budget = "zarr_chunk_budget:main"
+
+[project.urls]
+Repository = "https://github.com/XingCEO/zarr-chunk-budget"
+Issues = "https://github.com/XingCEO/zarr-chunk-budget/issues"
+
+[tool.setuptools]
+py-modules = ["zarr_chunk_budget"]
